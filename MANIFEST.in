@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include rq_orchestrator *.css
+recursive-include rq_orchestrator *.csv
+recursive-include rq_orchestrator *.html
+recursive-include rq_orchestrator *.ico
+recursive-include rq_orchestrator *.js
+recursive-include rq_orchestrator *.json
+recursive-include rq_orchestrator *.md
+recursive-include rq_orchestrator *.png
+recursive-include rq_orchestrator *.py
+recursive-include rq_orchestrator *.svg
+recursive-include rq_orchestrator *.txt
+recursive-exclude rq_orchestrator *.pyc
