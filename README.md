@@ -50,7 +50,7 @@ while True:
 	frappe.enqueue(test_func, sleep=1)
 ```
 
--   This will enqueue 2 jobs every second that consume 1 second each,=
+-   This will enqueue 2 jobs every second that consume 1 second each
 -   So roughly we will end up spewing 4-5 workers at which point workload and
     workers are balanced according to set parameters.
 -   If you stop enqueuing new jobs, overtime it will drop back to 2 workers
