@@ -19,6 +19,7 @@ class FrappeWorkerPool(WorkerPool):
 		**kwargs,
 	):
 		self._min_workers = min_workers
+		kwargs["num_workers"] = min_workers
 		self._max_workers = max_workers
 		self._utilization_threshold = utilization_threshold
 		self._scaling_period = scaling_period
