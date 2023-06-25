@@ -122,6 +122,12 @@ def start_worker_pool(
 ):
 	from frappe.utils.background_jobs import get_queue_list, get_redis_conn
 
+	if frappe._tune_gc:
+		import gc
+		gc.collect()
+		gc.freeze()
+
+
 	with frappe.init_site():
 		# empty init is required to get redis_queue from common_site_config.json
 		redis_connection = get_redis_conn()
