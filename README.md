@@ -65,6 +65,14 @@ If you visualize this is roughly how it will look:
 ![image](https://github.com/ankush/rq_orchestrator/assets/9079960/650649e2-c359-4f68-99be-e846d7c39978)
 
 
+
+### Memory efficiency
+
+Because WorkerPool forks workers from the master process it can utilize shared memory much better. A worker pool of 8 workers consumes only 1/3 of memory compared to 8 individual workers.  
+
+![image](https://github.com/ankush/rq_orchestrator/assets/9079960/b6d02778-0447-4474-bb17-df11054ae671)
+
+
 ### Implementation notes
 
 -   `--utilization-threshold` controls responsiveness vs efficiency. Low
