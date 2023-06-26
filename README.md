@@ -1,3 +1,7 @@
+A simple WorkerPool (without auto-scaling) is merged in Frappe: https://github.com/frappe/frappe/pull/21482
+
+---
+
 ## RQ Orchestrator
 
 Provides RQ worker pool with dynamic scaling :rocket:
@@ -68,7 +72,7 @@ If you visualize this is roughly how it will look:
 
 ### Memory efficiency
 
-Because WorkerPool forks workers from the master process it can utilize shared memory much better. A worker pool of 8 workers consumes only 1/3 of memory compared to 8 individual workers.  
+Because WorkerPool forks workers from the master process it can utilize shared memory much better. A worker pool of 8 workers consumes only 1/3 of memory compared to 8 individual workers.
 
 ![image](https://github.com/ankush/rq_orchestrator/assets/9079960/b6d02778-0447-4474-bb17-df11054ae671)
 
